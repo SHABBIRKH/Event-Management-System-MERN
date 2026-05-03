@@ -1,0 +1,16 @@
+# POST http://localhost:5731/api/users/register/
+# Content-Type: application/json
+
+# {
+
+#     "name":"admin",
+#     "email":"admin@gmail.com",
+#     "password":"12345678",
+#     "isAdmin":true
+# }
+
+#  GET http://localhost:5731/api/users/
+
+# get http://localhost:5731/speaker/
+
+GET http://localhost:5731/event/get?limit=1000
