@@ -21,7 +21,7 @@ const SpeakersList = () => {
   useEffect(() => {
     const fetchSpeakers = async () => {
       try {
-        const response = await fetch('http://localhost:5731/speaker/');
+        const response = await fetch('http://localhost:5731/api/speaker/');
         if (!response.ok) throw new Error('Failed to fetch speakers');
         const data = await response.json();
         setSpeakers(data);

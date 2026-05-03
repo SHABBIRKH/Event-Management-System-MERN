@@ -31,7 +31,7 @@ export default function Speaker() {
     form.append('photo', photoFile);       // file field name remains 'photo'
 
     try {
-      const response = await axios.post('http://localhost:5731/speaker', form, {
+      const response = await axios.post('http://localhost:5731/api/speaker', form, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

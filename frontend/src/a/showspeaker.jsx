@@ -9,7 +9,7 @@ export default function Showspeaker() {
   useEffect(() => {
     async function fetchSpeakers() {
       try {
-        const res = await axios.get('http://localhost:5731/speaker');
+        const res = await axios.get('http://localhost:5731/api/speaker');
         setSpeakers(res.data);
       } catch (error) {
         console.error('Error fetching speakers:', error);
